@@ -81,12 +81,25 @@ body {
   }
 }
 
+.navegacion_lista{
+  
+  display: flex;
+  flex: row;
+}
+
+.navegacion_lista-sub{
+    flex-direction: column;
+  align-items: center;
+}
+
 .boton::hover {
   cursor: pointer;
+  display: flex;
 }
 
 @media (min-width: 480px) {
   .navegacion-principal {
+    display: flex;
     flex-direction: row;
   }
 }
@@ -112,6 +125,7 @@ body {
 .nav-bg {
   background-color: var(--gris);
   padding: 2rem;
+  padding-bottom: 50px;
 }
 
 .navegacion-principal a {
@@ -129,7 +143,7 @@ body {
   color: var(--oscuro);
 }
 
-ul, ol{
+ul, li{
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -137,17 +151,19 @@ ul, ol{
 
 .navegacion_lista li a{
   text-decoration: none;
-  padding: 10px 15px;
-  display: block;
+  /* padding: 10px 15px; */
+  /* display: block; */
 }
 
 .navegacion_lista > li{
   float: left;
 }
 
-.navegacion_lista li ul{
-  display: none;
+.navegacion_lista li > ul{
+  /* display: none; */
 }
+
+
 
 .jr.img a::hover {
   font: "CETI Colomos";
