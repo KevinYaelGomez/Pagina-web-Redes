@@ -129,6 +129,26 @@ body {
   color: var(--oscuro);
 }
 
+ul, ol{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navegacion_lista li a{
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navegacion_lista > li{
+  float: left;
+}
+
+.navegacion_lista li ul{
+  display: none;
+}
+
 .jr.img a::hover {
   font: "CETI Colomos";
 }
