@@ -314,3 +314,11 @@ ul, li{
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
+
+.subtema{
+  display: none;
+}
+
+.navegacion_lista-sub:hover .subtema{
+  all: none;
+}
