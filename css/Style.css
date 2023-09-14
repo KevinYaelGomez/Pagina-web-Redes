@@ -1,0 +1,280 @@
+:root {
+  --blanco: rgb(250, 250, 250);
+  --oscuro: rgb(0, 28, 64);
+  --azul: rgb(0, 36, 81);
+  --gris: rgb(69, 68, 64);
+  --naranja: rgb(255, 177, 0);
+}
+
+header {
+  font-size: 0.5rem;
+  font-style: "Chakra Petch", sans-serif;
+  background-color: var(--azul);
+  padding: 20px;
+  font-weight: bold;
+  height: 135px;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Gluten", cursive;
+  font-family: "Indie Flower", cursive;
+  background-image: linear-gradient(
+    to top,
+    var(--blanco) 0%,
+    var(--blanco) 100%
+  );
+  background-color: var(--azul);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.titulo span {
+  font-size: 2rem;
+  color: var(--blanco);
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.logo {
+  width: 10rem;
+  justify-content: flex-start;
+}
+
+.boton {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 90%;
+  text-align: center;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+  }
+}
+
+.boton::hover {
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1140px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navegacion-principal {
+    flex-direction: row;
+  }
+}
+
+.nav-bg {
+  background-color: var(--gris);
+  padding: 2rem;
+}
+
+.navegacion-principal a {
+  color: var(--blanco);
+}
+
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--naranja);
+
+  color: var(--oscuro);
+}
+
+.jr.img a::hover {
+  font: "CETI Colomos";
+}
+
+.hero {
+  background-image: url(../Img/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.hero h2 {
+  color: var(--blanco);
+}
+
+.contenido-hero p {
+  color: var(--blanco);
+  font-weight: bold;
+}
+
+.contenido-hero {
+  position: absolute;
+  background-color: rgb(0 0 0 / 70%);
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.parciales {
+  background-color: var(--azul);
+  padding: 0.5px;
+}
+
+.parciales h3 {
+  color: var(--naranja);
+  text-align: center;
+  height: 1rem;
+}
+
+.parciales h2 {
+  color: var(--blanco);
+  text-align: center;
+}
+
+.texto p {
+  text-align: center;
+  color: var(--naranja);
+}
+
+@media (min-width: 768px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio h3 {
+  color: var(--naranja);
+  font-weight: normal;
+}
+
+.servicio p {
+  line-height: 2;
+  text-align: center;
+  color: var(--blanco);
+}
+
+.servicio .icono {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--naranja);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tablero h2 {
+  text-align: center;
+}
+
+.tablero {
+  background-color: var(--azul);
+}
+
+.ad {
+  background-color: var(--azul);
+  padding: 2rem;
+  text-align: center;
+}
+
+.ad p {
+  color: var(--blanco);
+}
+
+.formulario {
+  background-color: var(--gris);
+  width: min(60rem, 100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.formulario fieldset {
+  border: none;
+}
+
+.formulario legend {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--naranja);
+}
+
+.campo textarea {
+  height: 15rem;
+}
+
+.campo {
+  margin-bottom: 3rem;
+}
+
+.campo label {
+  color: var(--blanco);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input-text {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
