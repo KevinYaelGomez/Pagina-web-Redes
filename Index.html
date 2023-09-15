@@ -24,35 +24,65 @@
 
     <div class="nav-bg">
       <nav class="navegacion-principal contenedor">
-        <ul class="navegacion_lista">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Parcial 1</a><ul class="navegacion_lista-sub">
-            <li class="subtema"><a href="#">Tema 1</a></li>
-            <li  class="subtema"><a href="#">Tema 2</a></li>
-            <li class="subtema"><a href="#">Tema 3</a></li>
-            <li class="subtema"><a href="#">Tema 4</a></li>
-            <li class="subtema"><a href="#">Tema 5</a></li>
-          </ul></li>
-            
-          <li><a href="#">Parcial 2</a><ul class="navegacion_lista-sub">
-            <li class="subtema"><a href="#">Tema 1</a></li>
-            <li class="subtema"><a href="#">Tema 2</a></li>
-            <li class="subtema"><a href="#">Tema 3</a></li>
-            <li class="subtema"><a href="#">Tema 4</a></li>
-            <li class="subtema"><a href="#">Tema 5</a></li></li>
-            
-            </ul>
-          <li><a href="#">Parcial 3</a><ul class="navegacion_lista-sub">
-            <li class="subtema"><a href="#">Tema 1</a></li>
-            <li class="subtema"><a href="#">Tema 2</a></li>
-            <li class="subtema"><a href="#">Tema 3</a></li>
-            <li class="subtema"><a href="#">Tema 4</a></li>
-            <li class="subtema"><a href="#">Tema 5</a></li>
-          </ul></li>
-            
-          </li>
-          <li><a href="#">Acerca de la pagina</a></li>
-        </ul>
+        
+        <section class="menu_contenedor">
+          <ul class="menu_links">
+            <li class="menu_item">
+              <a href="#" class="menu_link">Inicio</a>
+            </li>
+  
+            <li class="menu_item menu_item--show">
+              <a href="#" class="menu_link">Parcial1</a>
+              <ul class="menu_nesting">
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema1</a>
+                </li>
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema2</a>
+                </li>
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema3</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="menu_item menu_item--show">
+              <a href="#" class="menu_link">Parcial2</a>
+              <ul class="menu_nesting">
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema1</a>
+                </li>
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema2</a>
+                </li>
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema3</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="menu_item menu_item--show">
+              <a href="#" class="menu_link">Parcial3</a>
+              <ul class="menu_nesting">
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema1</a>
+                </li>
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema2</a>
+                </li>
+                <li class="submenu">
+                  <a href="#" class="menu_parcial menu_link--inside">Tema3</a>
+                </li>
+              </ul>
+            </li>
+  
+            <li class="menu_item">
+              <a href="#" class="menu_link">Acerca de nosotros</a>
+            </li>
+          </ul>
+
+        </section>
+        
       </nav>
     </div>
 
@@ -233,5 +263,6 @@
         III.
       </p>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
